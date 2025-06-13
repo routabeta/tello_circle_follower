@@ -1,0 +1,198 @@
+[0.000000] (-) TimerEvent: {}
+[0.000089] (-) JobUnselected: {'identifier': 'ros2_shared'}
+[0.000112] (-) JobUnselected: {'identifier': 'tello_cv'}
+[0.000132] (-) JobUnselected: {'identifier': 'tello_description'}
+[0.000150] (-) JobUnselected: {'identifier': 'tello_driver'}
+[0.000505] (-) JobUnselected: {'identifier': 'tello_gazebo'}
+[0.000573] (tello_msgs) JobQueued: {'identifier': 'tello_msgs', 'dependencies': OrderedDict()}
+[0.000618] (tello_control) JobQueued: {'identifier': 'tello_control', 'dependencies': OrderedDict([('tello_msgs', '/root/tello_ros_ws/src/install/tello_msgs')])}
+[0.000636] (tello_msgs) JobStarted: {'identifier': 'tello_msgs'}
+[0.007582] (tello_msgs) JobProgress: {'identifier': 'tello_msgs', 'progress': 'cmake'}
+[0.008150] (tello_msgs) JobProgress: {'identifier': 'tello_msgs', 'progress': 'build'}
+[0.008703] (tello_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/tello_ros_ws/src/build/tello_msgs', '--', '-j32', '-l32'], 'cwd': '/root/tello_ros_ws/src/build/tello_msgs', 'env': OrderedDict([('HOSTNAME', 'labadmin-MS-7E07'), ('GIT_ASKPASS', '/root/.vscode-server/bin/258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/root/tello_ros_ws/install/tello_gazebo/lib:/root/tello_ros_ws/install/tello_driver/lib:/root/tello_ros_ws/install/tello_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/root/.vscode-server/bin/258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/root/tello_ros_ws'), ('TERM_PROGRAM_VERSION', '1.100.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-9926a60d-01d5-43fd-8655-e1b1856f4b80.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/root/tello_ros_ws/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-6f4a414a-9552-49af-b00e-a22ffff0fbed.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-6f4a414a-9552-49af-b00e-a22ffff0fbed.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-7ff1ca33c7.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-6f4a414a-9552-49af-b00e-a22ffff0fbed.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/root/tello_ros_ws/install/tello_gazebo:/root/tello_ros_ws/install/tello_driver:/root/tello_ros_ws/install/tello_msgs:/root/tello_ros_ws/install/tello_description:/root/tello_ros_ws/install/tello_cv:/root/tello_ros_ws/install/ros2_shared:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/tello_ros_ws/src/build/tello_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/tello_ros_ws/install/tello_msgs/lib/python3.8/site-packages:/root/tello_ros_ws/build/tello_cv:/root/tello_ros_ws/install/tello_cv/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/tello_ros_ws/install/tello_gazebo:/root/tello_ros_ws/install/tello_driver:/root/tello_ros_ws/install/tello_msgs:/root/tello_ros_ws/install/tello_description:/root/tello_ros_ws/install/ros2_shared:/root/tello_ros_ws/install/tello_cv:/opt/ros/foxy')]), 'shell': False}
+[0.065145] (tello_msgs) StdoutLine: {'line': b'[  2%] Built target tello_msgs__cpp\n'}
+[0.068700] (tello_msgs) StdoutLine: {'line': b'[ 12%] Built target tello_msgs__rosidl_generator_c\n'}
+[0.082833] (tello_msgs) StdoutLine: {'line': b'[ 23%] Built target tello_msgs__rosidl_typesupport_cpp\n'}
+[0.084029] (tello_msgs) StdoutLine: {'line': b'[ 42%] Built target tello_msgs__rosidl_typesupport_introspection_c\n'}
+[0.084120] (tello_msgs) StdoutLine: {'line': b'[ 44%] Built target tello_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.084902] (tello_msgs) StdoutLine: {'line': b'[ 55%] Built target tello_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.086095] (tello_msgs) StdoutLine: {'line': b'[ 65%] Built target tello_msgs__rosidl_typesupport_c\n'}
+[0.099560] (-) TimerEvent: {}
+[0.110710] (tello_msgs) StdoutLine: {'line': b'[ 76%] Built target tello_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.150604] (tello_msgs) StdoutLine: {'line': b'[ 76%] Built target tello_msgs\n'}
+[0.177032] (tello_msgs) StdoutLine: {'line': b'[ 78%] Built target tello_msgs__py\n'}
+[0.199642] (-) TimerEvent: {}
+[0.221461] (tello_msgs) StdoutLine: {'line': b'[ 87%] Built target tello_msgs__python\n'}
+[0.245900] (tello_msgs) StdoutLine: {'line': b'[ 91%] Built target tello_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.249444] (tello_msgs) StdoutLine: {'line': b'[ 95%] Built target tello_msgs__rosidl_typesupport_c__pyext\n'}
+[0.253694] (tello_msgs) StdoutLine: {'line': b'[100%] Built target tello_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.276329] (tello_msgs) CommandEnded: {'returncode': 0}
+[0.299856] (-) TimerEvent: {}
+[0.400427] (-) TimerEvent: {}
+[0.500888] (-) TimerEvent: {}
+[0.541969] (tello_msgs) JobProgress: {'identifier': 'tello_msgs', 'progress': 'install'}
+[0.556897] (tello_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/tello_ros_ws/src/build/tello_msgs'], 'cwd': '/root/tello_ros_ws/src/build/tello_msgs', 'env': OrderedDict([('HOSTNAME', 'labadmin-MS-7E07'), ('GIT_ASKPASS', '/root/.vscode-server/bin/258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/root/tello_ros_ws/install/tello_gazebo/lib:/root/tello_ros_ws/install/tello_driver/lib:/root/tello_ros_ws/install/tello_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/root/.vscode-server/bin/258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/root/tello_ros_ws'), ('TERM_PROGRAM_VERSION', '1.100.3'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-9926a60d-01d5-43fd-8655-e1b1856f4b80.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/root/tello_ros_ws/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-6f4a414a-9552-49af-b00e-a22ffff0fbed.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/.vscode-server/bin/258e40fedc6cb8edf399a463ce3a9d32e7e1f6f3/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-6f4a414a-9552-49af-b00e-a22ffff0fbed.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-7ff1ca33c7.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-6f4a414a-9552-49af-b00e-a22ffff0fbed.sock'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/root/tello_ros_ws/install/tello_gazebo:/root/tello_ros_ws/install/tello_driver:/root/tello_ros_ws/install/tello_msgs:/root/tello_ros_ws/install/tello_description:/root/tello_ros_ws/install/tello_cv:/root/tello_ros_ws/install/ros2_shared:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/tello_ros_ws/src/build/tello_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/tello_ros_ws/install/tello_msgs/lib/python3.8/site-packages:/root/tello_ros_ws/build/tello_cv:/root/tello_ros_ws/install/tello_cv/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/tello_ros_ws/install/tello_gazebo:/root/tello_ros_ws/install/tello_driver:/root/tello_ros_ws/install/tello_msgs:/root/tello_ros_ws/install/tello_description:/root/tello_ros_ws/install/ros2_shared:/root/tello_ros_ws/install/tello_cv:/opt/ros/foxy')]), 'shell': False}
+[0.567074] (tello_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.567210] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/ament_index/resource_index/rosidl_interfaces/tello_msgs\n'}
+[0.567252] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs\n'}
+[0.567286] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv\n'}
+[0.567342] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/tello_action.h\n'}
+[0.567374] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/detail\n'}
+[0.567405] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/detail/tello_action__functions.c\n'}
+[0.567435] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/detail/tello_action__type_support.h\n'}
+[0.567464] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/detail/tello_action__struct.h\n'}
+[0.567494] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/detail/tello_action__functions.h\n'}
+[0.567525] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg\n'}
+[0.567555] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.567585] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/flight_data.h\n'}
+[0.567613] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/tello_response.h\n'}
+[0.567642] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail\n'}
+[0.567688] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/flight_data__functions.c\n'}
+[0.567750] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/flight_data__struct.h\n'}
+[0.567778] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/flight_data__type_support.h\n'}
+[0.567805] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/tello_response__struct.h\n'}
+[0.567832] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/tello_response__type_support.h\n'}
+[0.567859] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/tello_response__functions.c\n'}
+[0.567886] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/flight_data__functions.h\n'}
+[0.567911] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/tello_response__functions.h\n'}
+[0.567947] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/environment/library_path.sh\n'}
+[0.567993] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/environment/library_path.dsv\n'}
+[0.568017] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/libtello_msgs__rosidl_generator_c.so\n'}
+[0.568043] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs\n'}
+[0.568071] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv\n'}
+[0.568095] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/detail\n'}
+[0.568121] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/detail/tello_action__rosidl_typesupport_fastrtps_c.h\n'}
+[0.568152] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg\n'}
+[0.568192] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.568218] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail\n'}
+[0.568243] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/tello_response__rosidl_typesupport_fastrtps_c.h\n'}
+[0.568287] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/flight_data__rosidl_typesupport_fastrtps_c.h\n'}
+[0.568313] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.568340] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs\n'}
+[0.568367] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv\n'}
+[0.568393] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/detail\n'}
+[0.568418] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/detail/dds_fastrtps\n'}
+[0.568443] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/detail/tello_action__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.568469] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg\n'}
+[0.568493] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.568519] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail\n'}
+[0.568543] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/dds_fastrtps\n'}
+[0.568580] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/tello_response__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.568637] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/flight_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.568666] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.568693] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs\n'}
+[0.568720] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv\n'}
+[0.568747] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/detail\n'}
+[0.568774] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/detail/tello_action__type_support.c\n'}
+[0.568800] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/detail/tello_action__rosidl_typesupport_introspection_c.h\n'}
+[0.568827] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg\n'}
+[0.568853] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.568880] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail\n'}
+[0.568905] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/flight_data__rosidl_typesupport_introspection_c.h\n'}
+[0.568952] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/tello_response__rosidl_typesupport_introspection_c.h\n'}
+[0.568976] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/tello_response__type_support.c\n'}
+[0.569001] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/flight_data__type_support.c\n'}
+[0.569025] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.569059] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_c.so\n'}
+[0.569087] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs\n'}
+[0.569129] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv\n'}
+[0.569189] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/tello_action.hpp\n'}
+[0.569220] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/detail\n'}
+[0.569248] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/detail/tello_action__struct.hpp\n'}
+[0.569275] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/detail/tello_action__type_support.hpp\n'}
+[0.569303] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/detail/tello_action__builder.hpp\n'}
+[0.569330] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/detail/tello_action__traits.hpp\n'}
+[0.569356] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg\n'}
+[0.569382] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.569449] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/tello_response.hpp\n'}
+[0.569478] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/flight_data.hpp\n'}
+[0.569506] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail\n'}
+[0.569533] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/tello_response__type_support.hpp\n'}
+[0.569560] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/flight_data__traits.hpp\n'}
+[0.569585] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/flight_data__struct.hpp\n'}
+[0.569611] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/tello_response__builder.hpp\n'}
+[0.569638] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/tello_response__struct.hpp\n'}
+[0.569665] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/tello_response__traits.hpp\n'}
+[0.569691] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/flight_data__type_support.hpp\n'}
+[0.569716] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/flight_data__builder.hpp\n'}
+[0.569760] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs\n'}
+[0.569788] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv\n'}
+[0.569816] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/detail\n'}
+[0.569843] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/detail/tello_action__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.569909] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/srv/detail/tello_action__type_support.cpp\n'}
+[0.569935] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg\n'}
+[0.569963] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail\n'}
+[0.569991] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/tello_response__type_support.cpp\n'}
+[0.570019] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/tello_response__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.570046] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/flight_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.570074] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/include/tello_msgs/msg/detail/flight_data__type_support.cpp\n'}
+[0.570141] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.570171] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/libtello_msgs__rosidl_typesupport_cpp.so\n'}
+[0.570197] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/environment/pythonpath.sh\n'}
+[0.570224] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/environment/pythonpath.dsv\n'}
+[0.570252] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/python3.8/site-packages/tello_msgs/__init__.py\n'}
+[0.600954] (-) TimerEvent: {}
+[0.605361] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/python3.8/site-packages/tello_msgs/msg\n'}
+[0.605425] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/python3.8/site-packages/tello_msgs/msg/_tello_response_s.c\n'}
+[0.605481] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/python3.8/site-packages/tello_msgs/msg/_flight_data_s.c\n'}
+[0.605506] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/python3.8/site-packages/tello_msgs/msg/_flight_data.py\n'}
+[0.605528] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/python3.8/site-packages/tello_msgs/msg/_tello_response.py\n'}
+[0.605550] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/python3.8/site-packages/tello_msgs/msg/__init__.py\n'}
+[0.605572] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/python3.8/site-packages/tello_msgs/srv\n'}
+[0.605593] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/python3.8/site-packages/tello_msgs/srv/_tello_action.py\n'}
+[0.605615] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/python3.8/site-packages/tello_msgs/srv/_tello_action_s.c\n'}
+[0.605642] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/python3.8/site-packages/tello_msgs/srv/__init__.py\n'}
+[0.605706] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/python3.8/site-packages/tello_msgs/tello_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.605931] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/python3.8/site-packages/tello_msgs/tello_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.606199] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/python3.8/site-packages/tello_msgs/tello_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.606373] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/lib/libtello_msgs__python.so\n'}
+[0.606463] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/msg/FlightData.idl\n'}
+[0.606486] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/msg/TelloResponse.idl\n'}
+[0.606508] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/srv/TelloAction.idl\n'}
+[0.606551] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/msg/FlightData.msg\n'}
+[0.606598] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/msg/TelloResponse.msg\n'}
+[0.606620] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/srv/TelloAction.srv\n'}
+[0.606639] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/srv/TelloAction_Request.msg\n'}
+[0.606658] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/srv/TelloAction_Response.msg\n'}
+[0.606700] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/ament_index/resource_index/package_run_dependencies/tello_msgs\n'}
+[0.606721] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/ament_index/resource_index/parent_prefix_path/tello_msgs\n'}
+[0.606776] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/environment/ament_prefix_path.sh\n'}
+[0.606799] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/environment/ament_prefix_path.dsv\n'}
+[0.606819] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/environment/path.sh\n'}
+[0.606874] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/environment/path.dsv\n'}
+[0.606909] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/local_setup.bash\n'}
+[0.606930] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/local_setup.sh\n'}
+[0.606964] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/local_setup.zsh\n'}
+[0.606985] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/local_setup.dsv\n'}
+[0.607006] (tello_msgs) StdoutLine: {'line': b'-- Installing: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/package.dsv\n'}
+[0.607027] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/ament_index/resource_index/packages/tello_msgs\n'}
+[0.607065] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/cmake/tello_msgs__rosidl_generator_cExport.cmake\n'}
+[0.607108] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/cmake/tello_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.607136] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/cmake/tello_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.607178] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/cmake/tello_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.607223] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/cmake/tello_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.607249] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/cmake/tello_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.607290] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/cmake/tello_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.607345] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/cmake/tello_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.607385] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/cmake/tello_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.607436] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/cmake/tello_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.607477] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/cmake/tello_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.607519] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.607558] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.607609] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.607636] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.607688] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.607722] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.607763] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.607787] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/cmake/tello_msgsConfig.cmake\n'}
+[0.607817] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/cmake/tello_msgsConfig-version.cmake\n'}
+[0.607840] (tello_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/tello_ros_ws/src/install/tello_msgs/share/tello_msgs/package.xml\n'}
+[0.609244] (tello_msgs) CommandEnded: {'returncode': 0}
+[0.701268] (-) TimerEvent: {}
+[0.802192] (-) TimerEvent: {}
+[0.886358] (tello_msgs) JobEnded: {'identifier': 'tello_msgs', 'rc': 0}
+[0.887174] (tello_control) JobStarted: {'identifier': 'tello_control'}
+[0.902325] (-) TimerEvent: {}
+[0.983819] (tello_control) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 51, in build\n    setup_py_data = get_setup_data(self.context.pkg, env)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/__init__.py", line 20, in get_setup_data\n    return dict(pkg.metadata[key](env))\n  File "/usr/lib/python3/dist-packages/colcon_ros/package_augmentation/ros_ament_python.py", line 57, in getter\n    return get_setup_information(\n  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 241, in get_setup_information\n    _setup_information_cache[hashable_env] = _get_setup_information(\n  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 288, in _get_setup_information\n    result = subprocess.run(\n  File "/usr/lib/python3.8/subprocess.py", line 516, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command \'[\'/usr/bin/python3\', \'-c\', \'import sys;from contextlib import suppress;exec("with suppress(ImportError):    from setuptools.extern.packaging.specifiers    import SpecifierSet");exec("with suppress(ImportError):    from packaging.specifiers import SpecifierSet");from distutils.core import run_setup;dist = run_setup(    \\\'setup.py\\\', script_args=(\\\'--dry-run\\\',), stop_after=\\\'config\\\');skip_keys = (\\\'cmdclass\\\', \\\'distclass\\\', \\\'ext_modules\\\', \\\'metadata\\\');data = {    key: value for key, value in dist.__dict__.items()     if (        not key.startswith(\\\'_\\\') and         not callable(value) and         key not in skip_keys and         key not in dist.display_option_names    )};data[\\\'metadata\\\'] = {    k: v for k, v in dist.metadata.__dict__.items()     if k not in (\\\'license_files\\\', \\\'provides_extras\\\')};sys.stdout.buffer.write(repr(data).encode(\\\'utf-8\\\'))\']\' returned non-zero exit status 1.\n'}
+[0.984125] (tello_control) JobEnded: {'identifier': 'tello_control', 'rc': 1}
+[0.994675] (-) EventReactorShutdown: {}

@@ -1,0 +1,6 @@
+Invoking command in '/root/tello_ros_ws/build/tello_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /root/tello_ros_ws/src/tello_description -DCMAKE_INSTALL_PREFIX=/root/tello_ros_ws/install/tello_description
+Invoked command in '/root/tello_ros_ws/build/tello_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /root/tello_ros_ws/src/tello_description -DCMAKE_INSTALL_PREFIX=/root/tello_ros_ws/install/tello_description
+Invoking command in '/root/tello_ros_ws/build/tello_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/tello_ros_ws/build/tello_description -- -j32 -l32
+Invoked command in '/root/tello_ros_ws/build/tello_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /root/tello_ros_ws/build/tello_description -- -j32 -l32
+Invoking command in '/root/tello_ros_ws/build/tello_description': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /root/tello_ros_ws/build/tello_description
+Invoked command in '/root/tello_ros_ws/build/tello_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /root/tello_ros_ws/build/tello_description

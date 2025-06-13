@@ -1,0 +1,27 @@
+[0.251s] Invoking command in '/root/tello_ros_ws/build/tello_cv': PYTHONPATH=/root/tello_ros_ws/build/tello_cv/prefix_override:/root/tello_ros_ws/install/tello_cv/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /root/tello_ros_ws/build/tello_cv/build
+[0.343s] running develop
+[0.384s] Invoked command in '/root/tello_ros_ws/build/tello_cv' returned '0': PYTHONPATH=/root/tello_ros_ws/build/tello_cv/prefix_override:/root/tello_ros_ws/install/tello_cv/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /root/tello_ros_ws/build/tello_cv/build
+[0.386s] Invoking command in '/root/tello_ros_ws/src/tello_cv': PYTHONPATH=/root/tello_ros_ws/build/tello_cv/prefix_override:/root/tello_ros_ws/install/tello_cv/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tello_cv build --build-base /root/tello_ros_ws/build/tello_cv/build install --record /root/tello_ros_ws/build/tello_cv/install.log --install-scripts $base/lib/tello_cv --single-version-externally-managed
+[0.466s] running egg_info
+[0.466s] writing ../../build/tello_cv/tello_cv.egg-info/PKG-INFO
+[0.466s] writing dependency_links to ../../build/tello_cv/tello_cv.egg-info/dependency_links.txt
+[0.466s] writing entry points to ../../build/tello_cv/tello_cv.egg-info/entry_points.txt
+[0.467s] writing requirements to ../../build/tello_cv/tello_cv.egg-info/requires.txt
+[0.467s] writing top-level names to ../../build/tello_cv/tello_cv.egg-info/top_level.txt
+[0.481s] reading manifest file '../../build/tello_cv/tello_cv.egg-info/SOURCES.txt'
+[0.481s] writing manifest file '../../build/tello_cv/tello_cv.egg-info/SOURCES.txt'
+[0.481s] running build
+[0.481s] running build_py
+[0.481s] running install
+[0.481s] running install_lib
+[0.482s] running install_data
+[0.482s] copying package.xml -> /root/tello_ros_ws/install/tello_cv/share/tello_cv
+[0.482s] creating /root/tello_ros_ws/install/tello_cv/share/tello_cv/launch
+[0.482s] copying launch/circle_tracker.launch.py -> /root/tello_ros_ws/install/tello_cv/share/tello_cv/launch
+[0.482s] running install_egg_info
+[0.483s] removing '/root/tello_ros_ws/install/tello_cv/lib/python3.8/site-packages/tello_cv-0.0.0-py3.8.egg-info' (and everything under it)
+[0.483s] Copying ../../build/tello_cv/tello_cv.egg-info to /root/tello_ros_ws/install/tello_cv/lib/python3.8/site-packages/tello_cv-0.0.0-py3.8.egg-info
+[0.483s] running install_scripts
+[0.491s] Installing circle_tracker_node script to /root/tello_ros_ws/install/tello_cv/lib/tello_cv
+[0.491s] writing list of installed files to '/root/tello_ros_ws/build/tello_cv/install.log'
+[0.500s] Invoked command in '/root/tello_ros_ws/src/tello_cv' returned '0': PYTHONPATH=/root/tello_ros_ws/build/tello_cv/prefix_override:/root/tello_ros_ws/install/tello_cv/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tello_cv build --build-base /root/tello_ros_ws/build/tello_cv/build install --record /root/tello_ros_ws/build/tello_cv/install.log --install-scripts $base/lib/tello_cv --single-version-externally-managed

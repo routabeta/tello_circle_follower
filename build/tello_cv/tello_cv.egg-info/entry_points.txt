@@ -1,0 +1,4 @@
+[console_scripts]
+circle_tracker_node = tello_cv.circle_tracker_node:main
+pid_controller_node = tello_cv.pid_controller_node:main
+

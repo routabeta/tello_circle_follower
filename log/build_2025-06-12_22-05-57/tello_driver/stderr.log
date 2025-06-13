@@ -1,0 +1,52 @@
+[01m[K/root/tello_ros_ws/src/tello_driver/src/video_socket.cpp:[m[K In member function ‘[01m[Kvoid tello_driver::VideoSocket::decode_frames()[m[K’:
+[01m[K/root/tello_ros_ws/src/tello_driver/src/video_socket.cpp:106:85:[m[K [01;31m[Kerror: [m[K‘[01m[Kmat[m[K’ was not declared in this scope
+  106 |             cv_bridge::CvImage cv_image{header, sensor_msgs::image_encodings::BGR8, [01;31m[Kmat[m[K};
+      |                                                                                     [01;31m[K^~~[m[K
+[01m[K/root/tello_ros_ws/src/tello_driver/src/video_socket.cpp:106:88:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcv_bridge::CvImage::CvImage(<brace-enclosed initializer list>)[m[K’
+  106 |             cv_bridge::CvImage cv_image{header, sensor_msgs::image_encodings::BGR8, mat[01;31m[K}[m[K;
+      |                                                                                        [01;31m[K^[m[K
+In file included from [01m[K/root/tello_ros_ws/src/tello_driver/include/tello_driver_node.hpp:4[m[K,
+                 from [01m[K/root/tello_ros_ws/src/tello_driver/src/video_socket.cpp:1[m[K:
+[01m[K/opt/ros/foxy/include/cv_bridge/cv_bridge.h:100:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv_bridge::CvImage::CvImage(const Header&, const string&, const cv::Mat&)[m[K’
+  100 |   [01;36m[KCvImage[m[K(
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/cv_bridge/cv_bridge.h:100:3:[m[K [01;36m[Knote: [m[K  conversion of argument 3 would be ill-formed:
+[01m[K/opt/ros/foxy/include/cv_bridge/cv_bridge.h:95:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv_bridge::CvImage::CvImage()[m[K’
+   95 |   [01;36m[KCvImage[m[K() {}
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/cv_bridge/cv_bridge.h:95:3:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 3 provided
+[01m[K/opt/ros/foxy/include/cv_bridge/cv_bridge.h:85:24:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv_bridge::CvImage::CvImage(const cv_bridge::CvImage&)[m[K’
+   85 | class CV_BRIDGE_EXPORT [01;36m[KCvImage[m[K
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/cv_bridge/cv_bridge.h:85:24:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/opt/ros/foxy/include/cv_bridge/cv_bridge.h:85:24:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv_bridge::CvImage::CvImage(cv_bridge::CvImage&&)[m[K’
+[01m[K/opt/ros/foxy/include/cv_bridge/cv_bridge.h:85:24:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/root/tello_ros_ws/src/tello_driver/src/video_socket.cpp:[m[K In member function ‘[01m[Kvoid tello_driver::VideoSocket::decode_frames()[m[K’:
+[01m[K/root/tello_ros_ws/src/tello_driver/src/video_socket.cpp:106:85:[m[K [01;31m[Kerror: [m[K‘[01m[Kmat[m[K’ was not declared in this scope
+  106 |             cv_bridge::CvImage cv_image{header, sensor_msgs::image_encodings::BGR8, [01;31m[Kmat[m[K};
+      |                                                                                     [01;31m[K^~~[m[K
+[01m[K/root/tello_ros_ws/src/tello_driver/src/video_socket.cpp:106:88:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcv_bridge::CvImage::CvImage(<brace-enclosed initializer list>)[m[K’
+  106 |             cv_bridge::CvImage cv_image{header, sensor_msgs::image_encodings::BGR8, mat[01;31m[K}[m[K;
+      |                                                                                        [01;31m[K^[m[K
+In file included from [01m[K/root/tello_ros_ws/src/tello_driver/include/tello_driver_node.hpp:4[m[K,
+                 from [01m[K/root/tello_ros_ws/src/tello_driver/src/video_socket.cpp:1[m[K:
+[01m[K/opt/ros/foxy/include/cv_bridge/cv_bridge.h:100:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv_bridge::CvImage::CvImage(const Header&, const string&, const cv::Mat&)[m[K’
+  100 |   [01;36m[KCvImage[m[K(
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/cv_bridge/cv_bridge.h:100:3:[m[K [01;36m[Knote: [m[K  conversion of argument 3 would be ill-formed:
+[01m[K/opt/ros/foxy/include/cv_bridge/cv_bridge.h:95:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv_bridge::CvImage::CvImage()[m[K’
+   95 |   [01;36m[KCvImage[m[K() {}
+      |   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/cv_bridge/cv_bridge.h:95:3:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 3 provided
+[01m[K/opt/ros/foxy/include/cv_bridge/cv_bridge.h:85:24:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv_bridge::CvImage::CvImage(const cv_bridge::CvImage&)[m[K’
+   85 | class CV_BRIDGE_EXPORT [01;36m[KCvImage[m[K
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/cv_bridge/cv_bridge.h:85:24:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/opt/ros/foxy/include/cv_bridge/cv_bridge.h:85:24:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv_bridge::CvImage::CvImage(cv_bridge::CvImage&&)[m[K’
+[01m[K/opt/ros/foxy/include/cv_bridge/cv_bridge.h:85:24:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+make[2]: *** [CMakeFiles/tello_driver_main.dir/build.make:128: CMakeFiles/tello_driver_main.dir/src/video_socket.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:140: CMakeFiles/tello_driver_main.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/tello_driver_node.dir/build.make:115: CMakeFiles/tello_driver_node.dir/src/video_socket.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:113: CMakeFiles/tello_driver_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,3 @@
+[console_scripts]
+teleop_keyboard_node = tello_control.teleop_keyboard:main
+

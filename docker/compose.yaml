@@ -1,0 +1,18 @@
+services:
+    tello_ctr:
+      build:
+        context: ${HOME}/tello_ros_ws
+        dockerfile: docker/Dockerfile
+      image: tello_img
+      network_mode: host
+      ipc: host
+      stdin_open: true
+      tty: true
+      volumes:
+        - /tmp/.X11-unix:/tmp/.X11-unix:rw
+        - ${HOME}/tello_ros_ws/src:/root/tello_ros_ws/src
+        - ${HOME}/tello_ros_ws/build:/root/tello_ros_ws/build
+        - ${HOME}/tello_ros_ws/install:/root/tello_ros_ws/install
+        - ${HOME}/tello_ros_ws/log:/root/tello_ros_ws/log
+      environment:
+        - "DISPLAY=${DISPLAY}" 
