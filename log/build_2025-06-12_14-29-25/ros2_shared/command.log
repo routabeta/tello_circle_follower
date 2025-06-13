@@ -1,4 +1,0 @@
-Invoking command in '/root/tello_ros_ws/build/ros2_shared': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /root/tello_ros_ws/build/ros2_shared -- -j32 -l32
-Invoked command in '/root/tello_ros_ws/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /root/tello_ros_ws/build/ros2_shared -- -j32 -l32
-Invoking command in '/root/tello_ros_ws/build/ros2_shared': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /root/tello_ros_ws/build/ros2_shared
-Invoked command in '/root/tello_ros_ws/build/ros2_shared' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /root/tello_ros_ws/build/ros2_shared

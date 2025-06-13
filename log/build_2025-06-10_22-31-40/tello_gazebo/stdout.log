@@ -1,5 +1,0 @@
--- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
--- Using PYTHON_EXECUTABLE: /usr/bin/python3
--- Configuring incomplete, errors occurred!
-See also "/root/tello_ros_ws/build/tello_gazebo/CMakeFiles/CMakeOutput.log".
-See also "/root/tello_ros_ws/build/tello_gazebo/CMakeFiles/CMakeError.log".

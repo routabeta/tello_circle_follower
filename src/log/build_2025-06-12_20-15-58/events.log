@@ -1,8 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000152] (-) JobUnselected: {'identifier': 'ros2_shared'}
-[0.000173] (-) JobUnselected: {'identifier': 'tello_cv'}
-[0.000187] (-) JobUnselected: {'identifier': 'tello_description'}
-[0.000200] (-) JobUnselected: {'identifier': 'tello_driver'}
-[0.000212] (-) JobUnselected: {'identifier': 'tello_gazebo'}
-[0.000224] (-) JobUnselected: {'identifier': 'tello_msgs'}
-[0.000236] (-) EventReactorShutdown: {}

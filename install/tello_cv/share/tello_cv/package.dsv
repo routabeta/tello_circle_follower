@@ -1,9 +1,0 @@
-source;share/tello_cv/hook/pythonpath.ps1
-source;share/tello_cv/hook/pythonpath.dsv
-source;share/tello_cv/hook/pythonpath.sh
-source;share/tello_cv/hook/ament_prefix_path.ps1
-source;share/tello_cv/hook/ament_prefix_path.dsv
-source;share/tello_cv/hook/ament_prefix_path.sh
-source;../../build/tello_cv/share/tello_cv/hook/pythonpath_develop.ps1
-source;../../build/tello_cv/share/tello_cv/hook/pythonpath_develop.dsv
-source;../../build/tello_cv/share/tello_cv/hook/pythonpath_develop.sh
