@@ -1,6 +1,6 @@
 # Tello Circle Tracker (ROS 2 + OpenCV)
 
-This project lets a Tello Boost Combo drone to autonomously follow a circular object using **ROS 2 (Foxy)** and **OpenCV**. It uses **OpenCV** to identify and track circular objects in the drone's onboard camera FOV, and uses **ROS2** to build a framework of nodes that use this information to control the drone along the x, y, and z axes.
+This project enables a Tello Boost Combo drone to autonomously follow a circular object using **ROS 2 (Foxy)** and **OpenCV**. It uses **OpenCV** to identify and track circular objects in the drone's onboard camera field of view (FOV), and uses **ROS2** to build a framework of nodes that use this information to control the drone along the x, y, and z axes.
 
 ---
 
@@ -9,6 +9,16 @@ This project lets a Tello Boost Combo drone to autonomously follow a circular ob
 ROS 2 and OpenCV are used to build a vision and control system. The system detects circles, tracks them across frames, reinitializes tracking to correct for drift, calculates offsets and relative sizes, and uses a PID controller to adjust the drone’s position accordingly.
 
 The project builds on [clydemcqueen’s `tello_ros`](https://github.com/clydemcqueen/tello_ros.git) driver repo.
+
+---
+
+## Media
+
+Click on each thumbnail to see demo videos of the project.
+
+| Drone Following Tape Roll | Drone Following Bottle Lid | Rviz2 Visualization of Processed Images |
+|--|--|--|
+|[![Following Tape Roll](https://img.youtube.com/vi/EuOOAuslQJs/0.jpg)](https://youtube.com/shorts/EuOOAuslQJs) | [![Following Bottle Lid](https://img.youtube.com/vi/SWep4OutECE/0.jpg)](https://youtube.com/shorts/SWep4OutECE) | [![Rviz2 Processed Image View](https://img.youtube.com/vi/RCwdl3PdHVU/0.jpg)](https://youtube.com/shorts/RCwdl3PdHVU)
 
 ---
 
@@ -34,7 +44,7 @@ The project builds on [clydemcqueen’s `tello_ros`](https://github.com/clydemcq
 
 ### Circle Detection (in `circle_tracker.launch.py`)
 - `target_radius`: Default `60.0`. Target radius in pixels of the target object in the camera feed to govern x-axis movement (distance from circle).
-- `scale`: Default `0.75`. Ratio to scale down image before processing to speed up detection/tracking. Smaller = faster but less accurate
+- `scale`: Default `0.75`. Ratio to scale down image before processing to speed up detection/tracking. Smaller scale (eg. 0.5) = faster processing but less accurate detections
 - `max_tracker_err`: Default `20`. The error, in pixels, between the center of the tracked vs. detected circle before re-initializing
 
 
@@ -56,8 +66,17 @@ The project builds on [clydemcqueen’s `tello_ros`](https://github.com/clydemcq
 
 ## Operation Instructions
 
+### Prerequisites
+
+Clone the repo using the link on GitHub
+```bash
+git clone https://github.com/routabeta/tello_circle_follower.git
+```
+
+Ensure docker is installed.
+
 ### 1. Launch the Container
-Make sure you are in your workspace + the workspace is built:
+Make sure you are in your workspace + the workspace is built by navigating to ./docker/ in the cloned repo and running:
 ```bash
 docker compose up
 colcon build
@@ -97,7 +116,7 @@ The Tello drone hosts its own Wi-Fi network (e.g., `TELLO-435946`). This connect
 ```bash
 nmcli connection modify TELLO-435946 connection.interface-name wlx80cc9c949553
 ```
-Replace `TELLO-435946` with the network name `wlx80cc9c949553` with the correct interface name used by the adapter. This can be identified with `ip a` or `nmcli device status` or `iw dev`, etc.
+Replace `TELLO-435946` with the Tello's network name `wlx80cc9c949553` with the correct interface name used by the adapter. This can be identified with `ip a` or `nmcli device status` or `iw dev`, etc.
 
 ---
 
